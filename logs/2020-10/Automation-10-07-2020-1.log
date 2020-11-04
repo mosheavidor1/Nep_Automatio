@@ -1,0 +1,317 @@
+2020-10-07 15:55:54,872 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2020-10-07 15:55:54,889 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After set chrome property
+2020-10-07 15:55:54,889 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2020-10-07 15:55:54,890 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2020-10-07 15:55:54,891 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2020-10-07 15:55:54,895 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2020-10-07 15:55:54,899 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2020-10-07 15:55:54,899 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2020-10-07 15:55:54,928 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2020-10-07 15:56:05,956 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2020-10-07 15:56:05,965 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2020-10-07 15:56:07,999 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2020-10-07 15:56:07,999 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 15:56:07,999 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 15:56:07,999 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2020-10-07 15:56:17,013 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2020-10-07 15:56:20,870 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 15:56:20,870 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 15:56:20,870 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 15:56:21,116 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 15:56:27,571 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 15:56:27,748 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 15:56:28,394 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 15:56:30,466 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 15:56:30,510 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 15:56:30,950 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 15:56:47,212 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 15:56:47,213 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 15:56:47,213 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 15:56:47,478 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 15:56:59,949 ERROR U.T.InvokedMethodListener [main] Could not select customer at CentCom search page. customer: TrustwaveEP Automation #3
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="ellipse _ngcontent-ufb-125">...</div> is not clickable at point (825, 871). Other element would receive the click: <span style="display: flex; align-items: center; justify-content: center; width: 100%;">...</span>
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58012}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 308f10fdade5a1ed4bc12664ac89145c
+
+Video: C:\Nep-2-next\nep-qa-master@b67ce9e09f9\nep-qa-automation\test-output\Capture\DownloadFromPortalTest 07-10-2020 15.55.53.avi
+ScreenShot: C:\Nep-2-next\nep-qa-master@b67ce9e09f9\nep-qa-automation\test-output\Capture\DownloadFromPortalTest 07-10-2020 15.55.53.png
+
+
+2020-10-07 15:57:01,196 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2020-10-07 15:57:01,196 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After set chrome property
+2020-10-07 15:57:01,197 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2020-10-07 15:57:01,197 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2020-10-07 15:57:01,198 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2020-10-07 15:57:01,198 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2020-10-07 15:57:01,199 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2020-10-07 15:57:01,199 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2020-10-07 15:57:01,200 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2020-10-07 15:57:04,988 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2020-10-07 15:57:04,991 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2020-10-07 15:57:07,004 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2020-10-07 15:57:07,005 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 15:57:07,005 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 15:57:07,005 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2020-10-07 15:57:15,176 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2020-10-07 15:57:18,791 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 15:57:18,792 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 15:57:18,792 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 15:57:19,089 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 15:57:24,704 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 15:57:24,855 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 15:57:25,494 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 15:57:27,569 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 15:57:27,626 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 15:57:28,103 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 15:57:40,851 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 15:57:40,851 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 15:57:40,852 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 15:57:41,173 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 15:58:09,559 INFO A.BrowserActions [main] Refresh button of publish configuration clicked successfully: By.xpath: //twa-button[@label='Refresh']
+2020-10-07 15:58:14,711 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 15:58:14,711 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 15:58:14,711 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 15:58:15,604 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 15:58:18,360 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 15:58:18,636 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 15:58:19,223 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 15:58:21,296 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 15:58:21,333 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 15:58:21,823 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 15:58:49,448 INFO A.ManagerActions [main] End Point Agent Binary Version:	1.2.0.1374
+2020-10-07 16:02:02,812 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2020-10-07 16:02:02,816 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After set chrome property
+2020-10-07 16:02:02,817 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2020-10-07 16:02:02,817 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2020-10-07 16:02:02,818 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2020-10-07 16:02:02,822 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2020-10-07 16:02:02,825 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2020-10-07 16:02:02,826 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2020-10-07 16:02:02,831 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2020-10-07 16:02:06,707 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2020-10-07 16:02:06,716 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2020-10-07 16:02:08,730 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2020-10-07 16:02:08,730 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 16:02:08,731 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 16:02:08,731 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2020-10-07 16:02:17,472 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2020-10-07 16:02:21,298 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 16:02:21,299 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 16:02:21,299 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 16:02:21,634 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 16:02:27,766 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 16:02:27,977 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 16:02:28,575 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 16:02:30,650 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 16:02:30,694 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 16:02:31,156 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 16:02:47,453 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 16:02:47,453 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 16:02:47,454 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 16:02:47,740 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 16:03:16,668 INFO A.BrowserActions [main] Refresh button of publish configuration clicked successfully: By.xpath: //twa-button[@label='Refresh']
+2020-10-07 16:03:21,810 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 16:03:21,811 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 16:03:21,811 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 16:03:22,658 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 16:03:25,227 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 16:03:25,592 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 16:03:26,200 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 16:03:28,266 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 16:03:28,310 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 16:03:28,695 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 16:03:50,604 INFO A.ManagerActions [main] End Point Agent Binary Version:	1.2.0.1374
+2020-10-07 16:03:51,907 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2020-10-07 16:03:51,907 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After set chrome property
+2020-10-07 16:03:51,908 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2020-10-07 16:03:51,908 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2020-10-07 16:03:51,908 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2020-10-07 16:03:51,908 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2020-10-07 16:03:51,908 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2020-10-07 16:03:51,909 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2020-10-07 16:03:51,909 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2020-10-07 16:03:55,138 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2020-10-07 16:03:55,141 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2020-10-07 16:03:57,155 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2020-10-07 16:03:57,155 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 16:03:57,157 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 16:03:57,157 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2020-10-07 16:04:05,774 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2020-10-07 16:04:08,890 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 16:04:08,890 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 16:04:08,890 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 16:04:09,211 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 16:04:15,012 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 16:04:15,175 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 16:04:15,786 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 16:04:17,855 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 16:04:17,902 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 16:04:18,471 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 16:04:34,498 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 16:04:34,498 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 16:04:34,498 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 16:04:34,745 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 16:05:03,962 INFO A.BrowserActions [main] Refresh button of publish configuration clicked successfully: By.xpath: //twa-button[@label='Refresh']
+2020-10-07 16:05:09,073 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 16:05:09,073 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 16:05:09,073 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 16:05:09,913 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 16:05:12,382 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 16:05:12,705 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 16:05:13,358 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 16:05:15,424 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 16:05:15,475 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 16:05:15,891 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 16:05:37,836 INFO A.ManagerActions [main] End Point Agent Binary Version:	1.2.0.1374
+2020-10-07 16:05:39,169 INFO T.E.InstallEndPointEnvironmentsTest [main] Starting InstallEndPointEnvironmentsTest::InstallTest ...
+2020-10-07 16:05:41,862 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.26.231
+2020-10-07 16:05:41,862 INFO A.LinuxAgentActions [main] Uninstalling EP if exists...
+2020-10-07 16:05:41,957 INFO U.R.SSHManager [main] Execute /opt/tw-endpoint/bin/service_ctl remove done!
+2020-10-07 16:05:47,027 ERROR U.R.SSHManager [main] Error response: 
+Unit tw-endpoint.service could not be found.
+2020-10-07 16:05:47,028 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-10-07 16:05:47,028 INFO A.LinuxAgentActions [main] Linux EP uninstalled successfully...
+2020-10-07 16:05:47,028 INFO A.BaseAgentActions [main] Copying installer to the EP...
+2020-10-07 16:05:47,028 DEBUG A.BaseAgentActions [main] masterDownloadDirectory: C:/home/NepManagerDownloads
+2020-10-07 16:05:47,029 DEBUG A.BaseAgentActions [main] epDownloadDirectory: /home/NepEPDownloads
+2020-10-07 16:05:47,056 DEBUG A.BaseAgentActions [main] installerDestination: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-10-07 16:05:47,056 DEBUG A.BaseAgentActions [main] installerSource: C:/home/NepManagerDownloads/TrustwaveEndpoint.lnx
+2020-10-07 16:05:47,084 ERROR U.T.InvokedMethodListener [main] Could not copy file from :  C:/home/NepManagerDownloads/TrustwaveEndpoint.lnx to machine: 10.85.26.231 local destination: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+4: java.io.FileNotFoundException: C:\home\NepManagerDownloads\TrustwaveEndpoint.lnx (The system cannot find the file specified)
+
+Video: C:\Nep-2-next\nep-qa-master@b67ce9e09f9\nep-qa-automation\test-output\Capture\InstallEndPointEnvironmentsTest 07-10-2020 16.05.39.avi
+
+
+2020-10-07 16:05:47,090 INFO T.E.InstallEndPointEnvironmentsTest [main] Starting InstallEndPointEnvironmentsTest::InstallTest ...
+2020-10-07 16:05:48,752 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.187
+2020-10-07 16:05:48,776 INFO A.WinAgentActions [main] Uninstalling EP if exists...
+2020-10-07 16:06:05,697 INFO U.R.SSHManager [main] Execute C:/home/NepEPDownloads/TrustwaveEndpoint.exe /q /uninstall done!
+2020-10-07 16:06:11,221 INFO U.R.SSHManager [main] Execute net start done!
+2020-10-07 16:06:12,669 INFO U.R.SSHManager [main] Execute tasklist done!
+2020-10-07 16:06:12,669 INFO A.BaseAgentActions [main] Copying installer to the EP...
+2020-10-07 16:06:12,670 DEBUG A.BaseAgentActions [main] masterDownloadDirectory: C:/home/NepManagerDownloads
+2020-10-07 16:06:12,670 DEBUG A.BaseAgentActions [main] epDownloadDirectory: /C:/home/NepEPDownloads
+2020-10-07 16:06:12,696 DEBUG A.BaseAgentActions [main] installerDestination: /C:/home/NepEPDownloads/TrustwaveEndpoint.exe
+2020-10-07 16:06:12,696 DEBUG A.BaseAgentActions [main] installerSource: C:/home/NepManagerDownloads/TrustwaveEndpoint.exe
+2020-10-07 16:06:26,076 INFO A.WinAgentActions [main] Installing EP...
+2020-10-07 16:06:26,098 DEBUG A.WinAgentActions [main] installer location: C:/home/NepEPDownloads/TrustwaveEndpoint.exe
+2020-10-07 16:06:39,737 INFO U.R.SSHManager [main] Execute C:/home/NepEPDownloads/TrustwaveEndpoint.exe /q  done!
+2020-10-07 16:06:45,229 INFO U.R.SSHManager [main] Execute net start done!
+2020-10-07 17:06:05,235 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2020-10-07 17:06:05,239 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After set chrome property
+2020-10-07 17:06:05,240 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2020-10-07 17:06:05,241 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2020-10-07 17:06:05,242 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2020-10-07 17:06:05,247 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2020-10-07 17:06:05,250 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2020-10-07 17:06:05,250 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2020-10-07 17:06:05,257 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2020-10-07 17:06:10,856 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2020-10-07 17:06:10,902 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2020-10-07 17:06:12,944 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2020-10-07 17:06:12,944 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 17:06:12,945 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 17:06:12,945 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.inc.tw-test.net
+2020-10-07 17:06:18,373 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.inc.tw-test.net
+2020-10-07 17:06:22,302 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 17:06:22,303 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 17:06:22,303 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.inc.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 17:06:22,484 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.inc.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 17:06:28,944 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 17:06:29,113 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 17:06:29,696 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 17:06:31,774 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 17:06:31,820 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 17:06:32,224 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 17:06:48,151 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 17:06:48,152 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 17:06:48,152 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.inc.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 17:06:48,342 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.inc.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 17:07:28,640 INFO A.BrowserActions [main] Refresh button of publish configuration clicked successfully: By.xpath: //twa-button[@label='Refresh']
+2020-10-07 17:07:35,043 INFO A.BrowserActions [main] Refresh button of publish configuration clicked successfully: By.xpath: //twa-button[@label='Refresh']
+2020-10-07 17:07:40,314 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 17:07:40,314 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 17:07:40,314 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.inc.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 17:07:40,917 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.inc.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 17:07:41,877 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 17:07:42,379 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 17:07:43,242 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 17:07:45,320 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 17:07:45,371 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 17:07:46,559 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 17:08:40,328 INFO A.ManagerActions [main] End Point Agent Binary Version:	1.2.0.1155
+2020-10-07 17:08:41,836 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2020-10-07 17:08:41,836 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After set chrome property
+2020-10-07 17:08:41,837 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2020-10-07 17:08:41,838 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2020-10-07 17:08:41,838 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2020-10-07 17:08:41,839 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2020-10-07 17:08:41,840 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2020-10-07 17:08:41,841 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2020-10-07 17:08:41,841 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2020-10-07 17:08:45,040 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2020-10-07 17:08:45,042 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2020-10-07 17:08:47,058 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2020-10-07 17:08:47,058 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 17:08:47,059 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 17:08:47,059 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.inc.tw-test.net
+2020-10-07 17:08:52,345 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.inc.tw-test.net
+2020-10-07 17:08:55,962 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 17:08:55,963 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 17:08:55,963 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.inc.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 17:08:56,205 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.inc.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 17:09:01,503 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 17:09:01,653 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 17:09:02,259 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 17:09:04,327 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 17:09:04,379 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 17:09:04,862 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 17:09:20,276 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 17:09:20,276 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 17:09:20,277 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.inc.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 17:09:20,472 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.inc.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-10-07 17:09:50,795 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-10-07 17:09:50,795 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-10-07 17:09:50,796 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.inc.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 17:09:51,400 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.inc.tw-test.net/#/support?menuKey=file-cabinet&stackKey=file-cabinet-files
+2020-10-07 17:09:52,387 DEBUG A.BrowserActions [main] customerSelector_element clicked
+2020-10-07 17:09:53,008 DEBUG A.BrowserActions [main] searchText_element cleared
+2020-10-07 17:09:53,934 DEBUG A.BrowserActions [main] searchText_element keys sent: TrustwaveEP Automation #3
+2020-10-07 17:09:56,029 DEBUG A.BrowserActions [main] customerNameBy - Before wait to be clickable 
+2020-10-07 17:09:56,075 DEBUG A.BrowserActions [main] customerNameBy - After wait to be clickable 
+2020-10-07 17:09:57,371 DEBUG A.BrowserActions [main] customerName - After click 
+2020-10-07 17:10:33,060 INFO A.ManagerActions [main] End Point Agent Binary Version:	1.2.0.1155
+2020-10-07 17:10:34,463 INFO T.E.InstallEndPointEnvironmentsTest [main] Starting InstallEndPointEnvironmentsTest::InstallTest ...
+2020-10-07 17:10:36,091 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.26.231
+2020-10-07 17:10:36,092 INFO A.LinuxAgentActions [main] Uninstalling EP if exists...
+2020-10-07 17:10:36,124 INFO A.LinuxAgentActions [main] Endpoint not installed, no need to remove
+2020-10-07 17:10:36,125 INFO A.BaseAgentActions [main] Copying installer to the EP...
+2020-10-07 17:10:36,125 DEBUG A.BaseAgentActions [main] masterDownloadDirectory: C:/home/NepManagerDownloads
+2020-10-07 17:10:36,125 DEBUG A.BaseAgentActions [main] epDownloadDirectory: /home/NepEPDownloads
+2020-10-07 17:10:36,152 DEBUG A.BaseAgentActions [main] installerDestination: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-10-07 17:10:36,152 DEBUG A.BaseAgentActions [main] installerSource: C:/home/NepManagerDownloads/TrustwaveEndpoint.lnx
+2020-10-07 17:10:36,187 ERROR U.T.InvokedMethodListener [main] Could not copy file from :  C:/home/NepManagerDownloads/TrustwaveEndpoint.lnx to machine: 10.85.26.231 local destination: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+4: java.io.FileNotFoundException: C:\home\NepManagerDownloads\TrustwaveEndpoint.lnx (The system cannot find the file specified)
+
+Video: C:\Nep-2-next\nep-qa-master@b67ce9e09f9\nep-qa-automation\test-output\Capture\InstallEndPointEnvironmentsTest 07-10-2020 17.10.34.avi
+
+
+2020-10-07 17:10:36,195 INFO T.E.InstallEndPointEnvironmentsTest [main] Starting InstallEndPointEnvironmentsTest::InstallTest ...
+2020-10-07 17:10:37,666 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.187
+2020-10-07 17:10:37,686 INFO A.WinAgentActions [main] Uninstalling EP if exists...
+2020-10-07 17:10:53,313 INFO U.R.SSHManager [main] Execute C:/home/NepEPDownloads/TrustwaveEndpoint.exe /q /uninstall done!
+2020-10-07 17:10:58,790 INFO U.R.SSHManager [main] Execute net start done!
+2020-10-07 17:11:00,320 INFO U.R.SSHManager [main] Execute tasklist done!
+2020-10-07 17:11:00,321 INFO A.BaseAgentActions [main] Copying installer to the EP...
+2020-10-07 17:11:00,321 DEBUG A.BaseAgentActions [main] masterDownloadDirectory: C:/home/NepManagerDownloads
+2020-10-07 17:11:00,321 DEBUG A.BaseAgentActions [main] epDownloadDirectory: /C:/home/NepEPDownloads
+2020-10-07 17:11:00,350 DEBUG A.BaseAgentActions [main] installerDestination: /C:/home/NepEPDownloads/TrustwaveEndpoint.exe
+2020-10-07 17:11:00,350 DEBUG A.BaseAgentActions [main] installerSource: C:/home/NepManagerDownloads/TrustwaveEndpoint.exe
+2020-10-07 17:11:13,562 INFO A.WinAgentActions [main] Installing EP...
+2020-10-07 17:11:13,585 DEBUG A.WinAgentActions [main] installer location: C:/home/NepEPDownloads/TrustwaveEndpoint.exe
+2020-10-07 17:11:26,425 INFO U.R.SSHManager [main] Execute C:/home/NepEPDownloads/TrustwaveEndpoint.exe /q  done!
+2020-10-07 17:11:31,935 INFO U.R.SSHManager [main] Execute net start done!

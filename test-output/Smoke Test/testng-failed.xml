@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke Tests(failed)">
+    <classes>
+      <class name="Tests.LNE.RevokeEndpoint">
+        <methods>
+          <include name="revokeEndpoint"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.LNE.RevokeEndpoint -->
+      <class name="Tests.LNE.ChangeCustomerConfAndVerify">
+        <methods>
+          <include name="changeCustomerConfAndVerify"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.LNE.ChangeCustomerConfAndVerify -->
+      <class name="Tests.LNE.ClusterConfiguration">
+        <methods>
+          <include name="setClusterConfiguration"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Tests.LNE.ClusterConfiguration -->
+      <class name="Tests.LNE.InstallEP">
+        <methods>
+          <include name="InstallEndPoint"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.LNE.InstallEP -->
+      <class name="Tests.LNE.InitCustomer">
+        <methods>
+          <include name="Close"/>
+          <include name="initCustomerAndDownloadInstaller"/>
+        </methods>
+      </class> <!-- Tests.LNE.InitCustomer -->
+      <class name="Tests.LNE.DeleteEndpoint">
+        <methods>
+          <include name="deleteEndpoint"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.LNE.DeleteEndpoint -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [Smoke Test] -->

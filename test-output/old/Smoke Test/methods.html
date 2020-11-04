@@ -1,0 +1,622 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Smoke Test</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="a9cea0">  <td>20/09/30 15:40:43</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="InitCustomer.initCustomerAndDownloadInstaller()[pri:0, instance:Tests.LNE.InitCustomer@3b36e000, instance params:[{From LNE up until response OK timeout=300, Settings Json= {
+  "centcom_meta": {
+   "schema_version": "1.1.1"
+  },
+  "global_conf": {
+   "log_level": "debug"
+  },
+  "agent": {
+   "ds_host": "endpoint-protection-services.local.tw-test.net",
+   "ds_port": 443,
+   "ds_protocol": "https",
+   "check_update_period": 30,
+   "report_period": 50,
+   "ds_max_off_period": 48,
+   "modules": [
+    {
+     "name": "Windows Log Monitor",
+     "binary_name": "WLM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Log File Monitor",
+     "binary_name": "LFM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Linux Log Monitor",
+     "enabled": false
+    }
+   ],
+   "transport": {
+    "server_type": 2,
+    "syslog": {
+     "port": 0
+    },
+    "scp": {
+     "host": "siem-ingress.trustwave.com",
+     "dest_folder": "/var/siem/data/nep",
+     "port": 9022,
+     "user": "twsiem",
+     "ack": false,
+     "max_send_folder_size": 2
+    }
+   }
+  },
+  "wlm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": [
+    {
+     "log_name": "security",
+     "enabled": true,
+     "advanced_filter": false,
+     "filters": []
+    },
+    {
+     "log_name": "application",
+     "enabled": false,
+     "advanced_filter": false,
+     "filters": []
+    }
+   ]
+  },
+  "lfm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "monitor_items": []
+  },
+  "llm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": []
+  }
+ }
+, Download timeout=600}]]">initCustomerAndDownloadInstaller</td> 
+  <td>main@255839577</td>   <td>993452032 </td> </tr>
+<tr bgcolor="a9cea0">  <td>20/09/30 15:41:01</td>   <td>18230</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;InitCustomer.Close()[pri:0, instance:Tests.LNE.InitCustomer@3b36e000]">&lt;&lt;Close</td> 
+<td>&nbsp;</td>  <td>main@255839577</td>   <td>993452032 </td> </tr>
+<tr bgcolor="ac637b">  <td>20/09/30 15:41:01</td>   <td>18250</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="InstallEP.InstallEndPoint()[pri:0, instance:Tests.LNE.InstallEP@4f8b4bd0, instance params:[{From LNE up until response OK timeout=300, EP_Type_1=lnx, EP_UserName_1=root, EP_Password_1=trustwave, EP_HostName_1=10.85.25.79, EP_Values_Populate_Method=Row_For_Every_EP, Download timeout=180, All_EP_In_One_Row=Row_For_Every_EP}]]">InstallEndPoint</td> 
+  <td>main@255839577</td>   <td>1334528976 </td> </tr>
+<tr bgcolor="ac637b">  <td>20/09/30 15:42:16</td>   <td>93573</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;InstallEP.Close()[pri:0, instance:Tests.LNE.InstallEP@4f8b4bd0]">&lt;&lt;Close</td> 
+<td>&nbsp;</td>  <td>main@255839577</td>   <td>1334528976 </td> </tr>
+<tr bgcolor="c792b5">  <td>20/09/30 15:42:16</td>   <td>93577</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="StandaloneEPconfigurationVerify.verifyStandaloneEPconfiguration()[pri:0, instance:Tests.LNE.StandaloneEPconfigurationVerify@4cbf4f53, instance params:[{StandAloneConfig= {
+        "centcom_meta": {
+            "schema_version": "1.1.1"
+        },
+        "global_conf": {
+            "log_level": "info"
+        },
+        "agent": {
+            "ds_host": "endpoint-protection-services.local.tw-test.net",
+            "ds_port": 443,
+            "ds_protocol": "https",
+            "check_update_period": 30,
+            "report_period": 60,
+            "ds_max_off_period": 24,
+            "modules": [{
+                    "name": "Windows Log Monitor",
+                    "enabled": true
+                }, {
+                    "name": "Log File Monitor",
+                    "enabled": true
+                }, {
+                    "name": "Linux Log Monitor",
+                    "enabled": true
+                }
+            ],
+            "transport": {
+                "server_type": 2,
+                "syslog": {
+                    "host": "10.85.25.43",
+                    "port": 6514,
+                    "protocol": "Secured"
+                },
+                "scp": {
+                    "host": "10.85.25.43",
+                    "port": 2200,
+                    "dest_folder": "/var/siem/data/nep",
+                    "user": "twsiem",
+                    "max_send_folder_size": 100
+                }
+            }
+        },
+        "wlm": {
+            "transport_type": 2,
+            "max_monitor_queue_size": 10000,
+            "queues_collector_idle_time": 5,
+            "monitor_items": []
+        },
+        "lfm": {
+            "monitor_items": [{
+                    "enabled": true,
+                    "os_type": "windows",
+                    "dir_path": "c:\\test_files",
+                    "filename": ".*\\.log",
+                    "header_lines": 0,
+                    "only_new_data": true,
+                    "configured_source": "log-src",
+                    "tag": "log-tag",
+                    "filters": [{
+                            "name": "Data",
+                            "values": [
+                                "test",
+                                "line"
+                            ]
+                        }, {
+                            "name": "Data",
+                            "values": [
+                                "nep",
+                                "file"
+                            ]
+                        }, {
+                            "name": "Data",
+                            "values": [
+                                "included"
+                            ]
+                        }
+                    ]
+                }, {
+                    "enabled": true,
+                    "os_type": "linux",
+                    "dir_path": "/root/test_files",
+                    "filename": ".*\\.log",
+                    "header_lines": 0,
+                    "only_new_data": true,
+                    "configured_source": "log-src",
+                    "tag": "log-tag",
+                    "filters": [{
+                            "name": "Data",
+                            "values": [
+                                "test",
+                                "line"
+                            ]
+                        }, {
+                            "name": "Data",
+                            "values": [
+                                "file",
+                                "nep"
+                            ]
+                        }, {
+                            "name": "Data",
+                            "values": [
+                                "included"
+                            ]
+                        }
+                    ]
+                }, {
+                    "dir_path": "c:\\test_files2",
+                    "os_type": "windows",
+                    "enabled": true,
+                    "only_new_data": false,
+                    "filename": "test_file.txt",
+                    "configured_source": "txt-src",
+                    "tag": "txt-tag",
+                    "header_lines": 0
+                }, {
+                    "dir_path": "/root/test_files2",
+                    "os_type": "linux",
+                    "enabled": true,
+                    "only_new_data": false,
+                    "filename": "test_file.txt",
+                    "configured_source": "txt-src",
+                    "tag": "txt-tag",
+                    "header_lines": 0
+                }
+            ],
+            "max_monitor_queue_size": 10000,
+            "queues_collector_idle_time": 5
+        },
+        "llm": {
+            "max_monitor_queue_size": 10000,
+            "queues_collector_idle_time": 5,
+            "transport_type": 2,
+            "monitor_items": []
+        }
+    }
+, EP_Type_1=lnx, EP_UserName_1=root, EP_Password_1=trustwave, EP_HostName_1=10.85.25.79, EP_Values_Populate_Method=All_EP_In_One_Row, config= {
+  "centcom_meta": {
+   "schema_version": "1.1.1"
+  },
+  "global_conf": {
+   "log_level": "debug"
+  },
+  "agent": {
+   "ds_host": "endpoint-protection-services.local.tw-test.net",
+   "ds_port": 443,
+   "ds_protocol": "https",
+   "check_update_period": 30,
+   "report_period": 34,
+   "ds_max_off_period": 24,
+   "modules": [
+    {
+     "name": "Windows Log Monitor",
+     "binary_name": "WLM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Log File Monitor",
+     "binary_name": "LFM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Linux Log Monitor",
+     "enabled": false
+    }
+   ],
+   "transport": {
+    "server_type": 2,
+    "syslog": {
+     "port": 0
+    },
+    "scp": {
+     "host": "siem-ingress.trustwave.com",
+     "dest_folder": "/var/siem/data/nep",
+     "port": 9022,
+     "user": "twsiem",
+     "ack": false,
+     "max_send_folder_size": 2
+    }
+   }
+  },
+  "wlm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": [
+    {
+     "log_name": "security",
+     "enabled": true,
+     "advanced_filter": false,
+     "filters": []
+    },
+    {
+     "log_name": "application",
+     "enabled": false,
+     "advanced_filter": false,
+     "filters": []
+    }
+   ]
+  },
+  "lfm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "monitor_items": []
+  },
+  "llm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": []
+  }
+ }
+, Download timeout=180}]]">verifyStandaloneEPconfiguration</td> 
+  <td>main@255839577</td>   <td>1287606099 </td> </tr>
+<tr bgcolor="c792b5">  <td>20/09/30 15:42:23</td>   <td>100144</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;StandaloneEPconfigurationVerify.Close()[pri:0, instance:Tests.LNE.StandaloneEPconfigurationVerify@4cbf4f53]">&lt;&lt;Close</td> 
+<td>&nbsp;</td>  <td>main@255839577</td>   <td>1287606099 </td> </tr>
+<tr bgcolor="87ed94">  <td>20/09/30 15:42:24</td>   <td>101612</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="ChangeCustomerConfAndVerify.changeCustomerConfAndVerify()[pri:0, instance:Tests.LNE.ChangeCustomerConfAndVerify@4e904fd5, instance params:[{Settings Json= {
+  "centcom_meta": {
+   "schema_version": "1.1.1"
+  },
+  "global_conf": {
+   "log_level": "debug"
+  },
+  "agent": {
+   "ds_host": "endpoint-protection-services.local.tw-test.net",
+   "ds_port": 443,
+   "ds_protocol": "https",
+   "check_update_period": 30,
+   "report_period": 34,
+   "ds_max_off_period": 24,
+   "modules": [
+    {
+     "name": "Windows Log Monitor",
+     "binary_name": "WLM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Log File Monitor",
+     "binary_name": "LFM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Linux Log Monitor",
+     "enabled": false
+    }
+   ],
+   "transport": {
+    "server_type": 2,
+    "syslog": {
+     "port": 0
+    },
+    "scp": {
+     "host": "siem-ingress.trustwave.com",
+     "dest_folder": "/var/siem/data/nep",
+     "port": 9022,
+     "user": "twsiem",
+     "ack": false,
+     "max_send_folder_size": 2
+    }
+   }
+  },
+  "wlm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": [
+    {
+     "log_name": "security",
+     "enabled": true,
+     "advanced_filter": false,
+     "filters": []
+    },
+    {
+     "log_name": "application",
+     "enabled": false,
+     "advanced_filter": false,
+     "filters": []
+    }
+   ]
+  },
+  "lfm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "monitor_items": []
+  },
+  "llm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": []
+  }
+ }
+, EP_Type_1=lnx, EP_UserName_1=root, EP_Password_1=trustwave, EP_HostName_1=10.85.25.79, EP_Values_Populate_Method=Row_For_Every_EP}]]">changeCustomerConfAndVerify</td> 
+  <td>main@255839577</td>   <td>1318080469 </td> </tr>
+<tr bgcolor="87ed94">  <td>20/09/30 15:42:25</td>   <td>102461</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ChangeCustomerConfAndVerify.Close()[pri:0, instance:Tests.LNE.ChangeCustomerConfAndVerify@4e904fd5]">&lt;&lt;Close</td> 
+<td>&nbsp;</td>  <td>main@255839577</td>   <td>1318080469 </td> </tr>
+<tr bgcolor="6e648a">  <td>20/09/30 15:42:26</td>   <td>103076</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="ClusterConfiguration.setClusterConfiguration()[pri:0, instance:Tests.LNE.ClusterConfiguration@b18c4, instance params:[{Settings Json= {
+  "centcom_meta": {
+   "schema_version": "1.1.1"
+  },
+  "global_conf": {
+   "log_level": "debug"
+  },
+  "agent": {
+   "ds_host": "endpoint-protection-services.local.tw-test.net",
+   "ds_port": 443,
+   "ds_protocol": "https",
+   "check_update_period": 30,
+   "report_period": 50,
+   "ds_max_off_period": 48,
+   "modules": [
+    {
+     "name": "Windows Log Monitor",
+     "binary_name": "WLM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Log File Monitor",
+     "binary_name": "LFM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Linux Log Monitor",
+     "enabled": false
+    }
+   ],
+   "transport": {
+    "server_type": 2,
+    "syslog": {
+     "port": 0
+    },
+    "scp": {
+     "host": "siem-ingress.trustwave.com",
+     "dest_folder": "/var/siem/data/nep",
+     "port": 9022,
+     "user": "twsiem",
+     "ack": false,
+     "max_send_folder_size": 2
+    }
+   }
+  },
+  "wlm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": [
+    {
+     "log_name": "security",
+     "enabled": true,
+     "advanced_filter": false,
+     "filters": []
+    },
+    {
+     "log_name": "application",
+     "enabled": false,
+     "advanced_filter": false,
+     "filters": []
+    }
+   ]
+  },
+  "lfm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "monitor_items": []
+  },
+  "llm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": []
+  }
+ }
+, EP_Type_1=lnx, EP_Type_2=win, EP_UserName_1=root, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=trustwave, EP_HostName_1=10.85.25.79, EP_Values_Populate_Method=All_EP_In_One_Row, EP_HostName_2=hostname}]]">setClusterConfiguration</td> 
+  <td>main@255839577</td>   <td>727236 </td> </tr>
+<tr bgcolor="ef968d">  <td>20/09/30 15:42:31</td>   <td>108333</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="RevokeEndpoint.revokeEndpoint()[pri:0, instance:Tests.LNE.RevokeEndpoint@4d48bd85, instance params:[{Settings Json= {
+  "centcom_meta": {
+   "schema_version": "1.1.1"
+  },
+  "global_conf": {
+   "log_level": "debug"
+  },
+  "agent": {
+   "ds_host": "endpoint-protection-services.local.tw-test.net",
+   "ds_port": 443,
+   "ds_protocol": "https",
+   "check_update_period": 30,
+   "report_period": 50,
+   "ds_max_off_period": 48,
+   "modules": [
+    {
+     "name": "Windows Log Monitor",
+     "binary_name": "WLM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Log File Monitor",
+     "binary_name": "LFM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Linux Log Monitor",
+     "enabled": false
+    }
+   ],
+   "transport": {
+    "server_type": 2,
+    "syslog": {
+     "port": 0
+    },
+    "scp": {
+     "host": "siem-ingress.trustwave.com",
+     "dest_folder": "/var/siem/data/nep",
+     "port": 9022,
+     "user": "twsiem",
+     "ack": false,
+     "max_send_folder_size": 2
+    }
+   }
+  },
+  "wlm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": [
+    {
+     "log_name": "security",
+     "enabled": true,
+     "advanced_filter": false,
+     "filters": []
+    },
+    {
+     "log_name": "application",
+     "enabled": false,
+     "advanced_filter": false,
+     "filters": []
+    }
+   ]
+  },
+  "lfm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "monitor_items": []
+  },
+  "llm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": []
+  }
+ }
+, EP_Type_1=lnx, EP_Type_2=win, EP_UserName_1=root, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=trustwave, EP_HostName_1=10.85.25.79, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_2=hostname}]]">revokeEndpoint</td> 
+  <td>main@255839577</td>   <td>1296612741 </td> </tr>
+<tr bgcolor="ef968d">  <td>20/09/30 15:43:52</td>   <td>189408</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;RevokeEndpoint.Close()[pri:0, instance:Tests.LNE.RevokeEndpoint@4d48bd85]">&lt;&lt;Close</td> 
+<td>&nbsp;</td>  <td>main@255839577</td>   <td>1296612741 </td> </tr>
+<tr bgcolor="e088a9">  <td>20/09/30 15:43:52</td>   <td>189410</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="DeleteEndpoint.deleteEndpoint()[pri:0, instance:Tests.LNE.DeleteEndpoint@7bbbb6a8, instance params:[{Settings Json= {
+  "centcom_meta": {
+   "schema_version": "1.1.1"
+  },
+  "global_conf": {
+   "log_level": "debug"
+  },
+  "agent": {
+   "ds_host": "endpoint-protection-services.local.tw-test.net",
+   "ds_port": 443,
+   "ds_protocol": "https",
+   "check_update_period": 30,
+   "report_period": 50,
+   "ds_max_off_period": 48,
+   "modules": [
+    {
+     "name": "Windows Log Monitor",
+     "binary_name": "WLM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Log File Monitor",
+     "binary_name": "LFM.dll",
+     "enabled": true
+    },
+    {
+     "name": "Linux Log Monitor",
+     "enabled": false
+    }
+   ],
+   "transport": {
+    "server_type": 2,
+    "syslog": {
+     "port": 0
+    },
+    "scp": {
+     "host": "siem-ingress.trustwave.com",
+     "dest_folder": "/var/siem/data/nep",
+     "port": 9022,
+     "user": "twsiem",
+     "ack": false,
+     "max_send_folder_size": 2
+    }
+   }
+  },
+  "wlm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": [
+    {
+     "log_name": "security",
+     "enabled": true,
+     "advanced_filter": false,
+     "filters": []
+    },
+    {
+     "log_name": "application",
+     "enabled": false,
+     "advanced_filter": false,
+     "filters": []
+    }
+   ]
+  },
+  "lfm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "monitor_items": []
+  },
+  "llm": {
+   "max_monitor_queue_size": 10000,
+   "queues_collector_idle_time": 5,
+   "transport_type": 2,
+   "monitor_items": []
+  }
+ }
+, EP_Type_1=lnx, EP_Type_2=win, EP_UserName_1=root, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=trustwave, EP_HostName_1=10.85.25.79, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_2=hostname}]]">deleteEndpoint</td> 
+  <td>main@255839577</td>   <td>2075899560 </td> </tr>
+<tr bgcolor="e088a9">  <td>20/09/30 15:45:29</td>   <td>286380</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;DeleteEndpoint.Close()[pri:0, instance:Tests.LNE.DeleteEndpoint@7bbbb6a8]">&lt;&lt;Close</td> 
+<td>&nbsp;</td>  <td>main@255839577</td>   <td>2075899560 </td> </tr>
+<tr bgcolor="6e648a">  <td>20/09/30 15:45:29</td>   <td>286382</td> <td>&nbsp;</td><td title="&lt;&lt;ClusterConfiguration.close()[pri:0, instance:Tests.LNE.ClusterConfiguration@b18c4]">&lt;&lt;close</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@255839577</td>   <td>727236 </td> </tr>
+</table>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Download_and_install" class="navigator-link">
+              <span class="suite-name border-failed">Download and install</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Download_and_install" class="navigator-link ">
+                    <span>C:\Nep-2-next\nep-qa-master@b67ce9e09f9\nep-qa-automation\src\main\java\TestSuites\DownloadInstallAndSendLogs.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Download_and_install" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Download_and_install" class="navigator-link ">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Download_and_install" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Download_and_install" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Download_and_install" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Download_and_install" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Download_and_install" class="hide-methods failed suite-Download_and_install"> (hide)</a> <!-- hide-methods failed suite-Download_and_install -->
+                      <a href="#" panel-name="suite-Download_and_install" class="show-methods failed suite-Download_and_install"> (show)</a> <!-- show-methods failed suite-Download_and_install -->
+                    </span>
+                    <div class="method-list-content failed suite-Download_and_install">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Download_and_install" title="Tests.Environments.DownloadFromPortalTest" class="method navigator-link" hash-for-method="DownloadTest">DownloadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Download_and_install -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Download_and_install" class="hide-methods skipped suite-Download_and_install"> (hide)</a> <!-- hide-methods skipped suite-Download_and_install -->
+                      <a href="#" panel-name="suite-Download_and_install" class="show-methods skipped suite-Download_and_install"> (show)</a> <!-- show-methods skipped suite-Download_and_install -->
+                    </span>
+                    <div class="method-list-content skipped suite-Download_and_install">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Download_and_install" title="Tests.Environments.InstallEndPointEnvironmentsTest" class="method navigator-link" hash-for-method="InstallTest">InstallTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Download_and_install" title="Tests.Environments.ClientLogToPortalTest" class="method navigator-link" hash-for-method="SendLogsAndVerify">SendLogsAndVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Download_and_install" title="Tests.Environments.VerifyEndPointOkAtPortalTest" class="method navigator-link" hash-for-method="VerifyEndPointStatusAtPortalTest">VerifyEndPointStatusAtPortalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Download_and_install -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Download_and_install" class="panel Download_and_install">
+          <div class="suite-Download_and_install-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.Environments.DownloadFromPortalTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DownloadTest">
+                  </a> <!-- DownloadTest -->
+                  <span class="method-name">DownloadTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Could not download endpoint installation files
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NTY-EN-8D25HC2&apos;, ip: &apos;10.243.68.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56704}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4f08e7ff591f41dc4aac704b2aea86cc
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;TrustwaveEndpoint.exe&apos;)]}
+
+Video: C:\Nep-2-next\nep-qa-master@b67ce9e09f9\nep-qa-automation\test-output\Capture\DownloadFromPortalTest 19-10-2020 19.07.36.avi
+
+
+	at Actions.BrowserActions.DownloadFilesFromTrustWaveEndPointFolder(BrowserActions.java:500)
+	at Tests.Environments.DownloadFromPortalTest.DownloadTest(DownloadFromPortalTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:87)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Download_and_install-class-failed -->
+          <div class="suite-Download_and_install-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.Environments.VerifyEndPointOkAtPortalTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyEndPointStatusAtPortalTest">
+                  </a> <!-- VerifyEndPointStatusAtPortalTest -->
+                  <span class="method-name">VerifyEndPointStatusAtPortalTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method VerifyEndPointOkAtPortalTest.VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@530612ba, instance params:[{Customer=TrustwaveEPstg Test #1}]] depends on not successfully finished methods in group &quot;install&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:87)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Download_and_install-class-skipped -->
+          <div class="suite-Download_and_install-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.Environments.ClientLogToPortalTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SendLogsAndVerify">
+                  </a> <!-- SendLogsAndVerify -->
+                  <span class="method-name">SendLogsAndVerify</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ClientLogToPortalTest.SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@2a40cd94, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEPstg Test #1, Log To Appear Timeout=600, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=solo-user, EP_Password_1=breach12345, Parameters Per Environment=STG, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.stg.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.175}]] depends on not successfully finished methods in group &quot;verify&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:87)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Download_and_install-class-skipped -->
+          <div class="suite-Download_and_install-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.Environments.InstallEndPointEnvironmentsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InstallTest">
+                  </a> <!-- InstallTest -->
+                  <span class="method-name">InstallTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method InstallEndPointEnvironmentsTest.InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@2df32bf7, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=solo-user, EP_Password_1=breach12345, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.175}]] depends on not successfully finished methods in group &quot;download&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:87)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Download_and_install-class-skipped -->
+        </div> <!-- panel Download_and_install -->
+        <div panel-name="test-xml-Download_and_install" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Nep-2-next\nep-qa-master@b67ce9e09f9\nep-qa-automation\src\main\java\TestSuites\DownloadInstallAndSendLogs.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Download and install&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Download installer, install End Point and verify logs are sent&quot;&gt;
+    &lt;groups&gt;
+      &lt;dependencies&gt;
+        &lt;group depends-on=&quot;download&quot; name=&quot;install&quot;/&gt;
+        &lt;group depends-on=&quot;install&quot; name=&quot;verify&quot;/&gt;
+        &lt;group depends-on=&quot;verify&quot; name=&quot;logs&quot;/&gt;
+      &lt;/dependencies&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.Environments.DownloadFromPortalTest&quot;/&gt;
+      &lt;class name=&quot;Tests.Environments.InstallEndPointEnvironmentsTest&quot;/&gt;
+      &lt;class name=&quot;Tests.Environments.VerifyEndPointOkAtPortalTest&quot;/&gt;
+      &lt;class name=&quot;Tests.Environments.ClientLogToPortalTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Download installer, install End Point and verify logs are sent --&gt;
+&lt;/suite&gt; &lt;!-- Download and install --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Download_and_install" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Download and install</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Download installer, install End Point and verify logs are sent (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Download_and_install" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Download and install</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">download</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">DownloadTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">install</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">InstallTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">logs</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">SendLogsAndVerify</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">verify</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyEndPointStatusAtPortalTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Download_and_install" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Download and install</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Download_and_install');
+function tableData_Download_and_install() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'DownloadTest')
+data.setCell(0, 2, 'Tests.Environments.DownloadFromPortalTest')
+data.setCell(0, 3, 145047);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SendLogsAndVerify')
+data.setCell(1, 2, 'Tests.Environments.ClientLogToPortalTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyEndPointStatusAtPortalTest')
+data.setCell(2, 2, 'Tests.Environments.VerifyEndPointOkAtPortalTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'InstallTest')
+data.setCell(3, 2, 'Tests.Environments.InstallEndPointEnvironmentsTest')
+data.setCell(3, 3, 0);
+window.suiteTableData['Download_and_install']= { tableData: data, tableDiv: 'times-div-Download_and_install'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Download_and_install">
+              </div> <!-- times-div-Download_and_install -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Download_and_install" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Download and install</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Download_and_install" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Download_and_install" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.DownloadFromPortalTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DownloadTest</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Close</span>
+                <span class="method-start">145375 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">149805 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.InstallEndPointEnvironmentsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InstallTest</span>
+                <span class="method-start">149808 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.VerifyEndPointOkAtPortalTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyEndPointStatusAtPortalTest</span>
+                <span class="method-start">149809 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.ClientLogToPortalTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SendLogsAndVerify</span>
+                <span class="method-start">149809 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,328 @@
+2020-09-24 18:27:16,795 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 18:27:18,354 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 18:27:20,398 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 18:27:20,748 INFO T.L.InitCustomer [main] Starting InitCustomerAndDownloadInstaller test ...
+2020-09-24 18:27:21,850 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 18:27:21,851 INFO A.LNEActions [main] Checking if current installer exist. If yes deleting it... LNE machine:10.85.25.79
+2020-09-24 18:27:26,011 INFO A.LNEActions [main] Success. LNE InitCustomerSettings response: 200
+2020-09-24 18:27:26,067 INFO A.LNEActions [main] Waiting file cabinet folder to appear... LNE machine:10.85.25.79
+2020-09-24 18:27:26,085 INFO A.LNEActions [main] Waiting for customer folder to appear at file cabinet... LNE machine:10.85.25.79
+2020-09-24 18:27:36,148 INFO A.LNEActions [main] Getting the list of files at customer folder... LNE machine:10.85.25.79
+2020-09-24 18:27:36,284 INFO A.LNEActions [main] Waiting for windows installer file to be ready... LNE machine:10.85.25.79
+2020-09-24 18:27:38,593 INFO A.LNEActions [main] Waiting for linux installer file to be ready... LNE machine:10.85.25.79
+2020-09-24 18:27:42,115 INFO A.LNEActions [main] Waiting for installer sha file to be ready... LNE machine:10.85.25.79
+2020-09-24 18:27:42,550 INFO A.ManagerActions [main] End Point Agent Binary Version:	1.2.0.1212
+2020-09-24 18:27:42,551 INFO A.ManagerActions [main] Verifying linux installer...
+2020-09-24 18:27:42,552 DEBUG A.ManagerActions [main] Hash is: 5b2be933bb127589edde36fc7e1a1465dc0f64d889aeb233922df0dc2308593d
+2020-09-24 18:27:42,852 INFO A.ManagerActions [main] Linux installer hash verified successfully.
+2020-09-24 18:27:43,010 INFO A.LNEActions [main] Success. LNE certificate received
+2020-09-24 18:27:43,042 INFO T.L.InstallEP [main] Starting InstallEndPoint test ...
+2020-09-24 18:27:44,341 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 18:27:44,342 INFO A.LinuxAgentActions [main] Uninstalling EP if exists...
+2020-09-24 18:27:44,441 INFO U.R.SSHManager [main] Execute /opt/tw-endpoint/bin/service_ctl remove done!
+2020-09-24 18:27:49,504 ERROR U.R.SSHManager [main] Error response: 
+Unit tw-endpoint.service could not be found.
+2020-09-24 18:27:49,506 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 18:27:49,507 INFO A.LinuxAgentActions [main] Linux EP uninstalled successfully...
+2020-09-24 18:27:49,507 INFO A.BaseAgentActions [main] Copying installer to the EP...
+2020-09-24 18:27:49,508 DEBUG A.BaseAgentActions [main] masterDownloadDirectory: C:/home/NepManagerDownloads
+2020-09-24 18:27:49,509 DEBUG A.BaseAgentActions [main] epDownloadDirectory: /home/NepEPDownloads
+2020-09-24 18:27:49,527 DEBUG A.BaseAgentActions [main] installerDestination: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-09-24 18:27:49,528 DEBUG A.BaseAgentActions [main] installerSource: C:/home/NepManagerDownloads/TrustwaveEndpoint.lnx
+2020-09-24 18:28:19,702 INFO A.LinuxAgentActions [main] Installing EP...
+2020-09-24 18:28:19,720 DEBUG A.LinuxAgentActions [main] installer location: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-09-24 18:28:19,768 INFO U.R.SSHManager [main] Execute chmod +x /home/NepEPDownloads/TrustwaveEndpoint.lnx done!
+2020-09-24 18:28:20,701 ERROR U.R.SSHManager [main] Error response: 
+Created symlink from /etc/systemd/system/multi-user.target.wants/tw-endpoint.service to /etc/systemd/system/tw-endpoint.service.
+2020-09-24 18:28:20,702 INFO U.R.SSHManager [main] Execute /home/NepEPDownloads/TrustwaveEndpoint.lnx done!
+2020-09-24 18:28:25,858 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 18:28:25,859 INFO A.LinuxAgentActions [main] Stopping Linux EP service...
+2020-09-24 18:28:45,952 INFO U.R.SSHManager [main] Execute systemctl stop tw-endpoint done!
+2020-09-24 18:28:51,006 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 18:28:51,009 INFO A.BaseAgentActions [main] Adding certificate on the EP...
+2020-09-24 18:28:52,661 INFO A.LinuxAgentActions [main] Starting EP service...
+2020-09-24 18:28:52,934 INFO U.R.SSHManager [main] Execute systemctl start tw-endpoint done!
+2020-09-24 18:28:58,010 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 18:29:00,118 INFO U.R.SSHManager [main] Execute hostname done!
+2020-09-24 18:29:00,205 INFO U.R.SSHManager [main] Execute tac /work/services/stub-srv/var/log/nep/nep_dummy_services.log | grep -m 1 "Method 'registerEndpoint'" done!
+2020-09-24 18:29:00,234 ERROR U.T.InvokedMethodListener [main] Failed to found Centcom call for method registerEndpoint. Response is empty
+
+Video: 
+
+
+2020-09-24 18:29:00,237 INFO T.L.StandaloneEPconfigurationVerify [main] Starting StandaloneEPconfigurationVerify::verifyStandaloneEPconfiguration ...
+2020-09-24 18:29:00,259 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 18:29:00,260 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.4 hostname ep1 os Windows 10 macAddress 84-7B-EB-21-22
+2020-09-24 18:29:01,465 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID 431f4c38-4cd4-4bfc-a985-51059b4858b0
+2020-09-24 18:29:01,466 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 18:29:01,467 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.5 hostname ep2 os Windows 10 macAddress 84-7B-EB-21-23
+2020-09-24 18:29:01,577 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID 896b8d0e-0dd4-42a4-a5cf-559963d115b0
+2020-09-24 18:29:02,551 INFO A.LNEActions [main] SetCustomerConfiguration response: 200
+2020-09-24 18:29:03,134 INFO A.LNEActions [main] setEndpointConfig response: 200
+2020-09-24 18:29:03,168 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 431f4c38-4cd4-4bfc-a985-51059b4858b0 epName ep1 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 18:29:03,170 INFO A.SimulatedAgentActions [main] Will send request check-updates/431f4c38-4cd4-4bfc-a985-51059b4858b0/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep1/schema-ver/1.1.1/
+2020-09-24 18:29:03,277 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@6f38f084'
+2020-09-24 18:29:03,279 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId 431f4c38-4cd4-4bfc-a985-51059b4858b0
+2020-09-24 18:29:03,341 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":5,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 18:29:03,353 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 896b8d0e-0dd4-42a4-a5cf-559963d115b0 epName ep2 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 18:29:03,354 INFO A.SimulatedAgentActions [main] Will send request check-updates/896b8d0e-0dd4-42a4-a5cf-559963d115b0/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep2/schema-ver/1.1.1/
+2020-09-24 18:29:03,423 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@691567ea'
+2020-09-24 18:29:03,424 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId 896b8d0e-0dd4-42a4-a5cf-559963d115b0
+2020-09-24 18:29:03,496 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":6,"schema_version":"1.1.1"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 18:29:04,101 INFO A.LNEActions [main] Success. LNE revokeEpConfiguration response: 200
+2020-09-24 18:29:04,101 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 896b8d0e-0dd4-42a4-a5cf-559963d115b0 epName ep2 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 18:29:04,101 INFO A.SimulatedAgentActions [main] Will send request check-updates/896b8d0e-0dd4-42a4-a5cf-559963d115b0/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep2/schema-ver/1.1.1/
+2020-09-24 18:29:04,177 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@6de43bc1'
+2020-09-24 18:29:04,178 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId 896b8d0e-0dd4-42a4-a5cf-559963d115b0
+2020-09-24 18:29:04,259 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":5,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 18:29:04,806 INFO A.LNEActions [main] SetCustomerConfiguration response: 200
+2020-09-24 18:29:04,806 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 431f4c38-4cd4-4bfc-a985-51059b4858b0 epName ep1 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 18:29:04,806 INFO A.SimulatedAgentActions [main] Will send request check-updates/431f4c38-4cd4-4bfc-a985-51059b4858b0/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep1/schema-ver/1.1.1/
+2020-09-24 18:29:04,889 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@d2708a7'
+2020-09-24 18:29:04,890 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId 431f4c38-4cd4-4bfc-a985-51059b4858b0
+2020-09-24 18:29:04,965 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":6,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 18:29:04,967 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 896b8d0e-0dd4-42a4-a5cf-559963d115b0 epName ep2 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 18:29:04,967 INFO A.SimulatedAgentActions [main] Will send request check-updates/896b8d0e-0dd4-42a4-a5cf-559963d115b0/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep2/schema-ver/1.1.1/
+2020-09-24 18:29:05,085 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@5cff729b'
+2020-09-24 18:29:05,086 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId 896b8d0e-0dd4-42a4-a5cf-559963d115b0
+2020-09-24 18:29:05,172 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":6,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 18:29:05,173 INFO T.L.StandaloneEPconfigurationVerify [main] StandaloneEPconfigurationVerify::verifyStandaloneEPconfiguration completed.
+2020-09-24 18:29:05,174 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: ep1
+2020-09-24 18:29:05,751 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 431f4c38-4cd4-4bfc-a985-51059b4858b0 epName ep1 binVersion 1.2.0.100 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 18:29:05,752 INFO A.SimulatedAgentActions [main] Will send request check-updates/431f4c38-4cd4-4bfc-a985-51059b4858b0/bin-ver/1.2.0.100/conf-ver/0/reporting-status/0/local-name/ep1/schema-ver/1.1.1/
+2020-09-24 18:29:05,831 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@36c07c75'
+2020-09-24 18:29:05,832 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: ep2
+2020-09-24 18:29:06,371 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 896b8d0e-0dd4-42a4-a5cf-559963d115b0 epName ep2 binVersion 1.2.0.100 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 18:29:06,372 INFO A.SimulatedAgentActions [main] Will send request check-updates/896b8d0e-0dd4-42a4-a5cf-559963d115b0/bin-ver/1.2.0.100/conf-ver/0/reporting-status/0/local-name/ep2/schema-ver/1.1.1/
+2020-09-24 18:29:06,446 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@5eb87338'
+2020-09-24 18:29:06,450 INFO T.L.ClusterConfiguration [main] Closing...
+2020-09-24 19:07:07,156 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:07:08,240 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:07:09,288 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:07:09,424 INFO T.L.InitCustomer [main] Starting InitCustomerAndDownloadInstaller test ...
+2020-09-24 19:07:10,428 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:07:10,428 INFO A.LNEActions [main] Checking if current installer exist. If yes deleting it... LNE machine:10.85.25.79
+2020-09-24 19:07:14,829 INFO A.LNEActions [main] Success. LNE InitCustomerSettings response: 200
+2020-09-24 19:07:14,909 INFO A.LNEActions [main] Waiting file cabinet folder to appear... LNE machine:10.85.25.79
+2020-09-24 19:07:14,932 INFO A.LNEActions [main] Waiting for customer folder to appear at file cabinet... LNE machine:10.85.25.79
+2020-09-24 19:07:25,006 INFO A.LNEActions [main] Getting the list of files at customer folder... LNE machine:10.85.25.79
+2020-09-24 19:07:25,100 INFO A.LNEActions [main] Waiting for windows installer file to be ready... LNE machine:10.85.25.79
+2020-09-24 19:07:28,218 INFO A.LNEActions [main] Waiting for linux installer file to be ready... LNE machine:10.85.25.79
+2020-09-24 19:07:32,295 INFO A.LNEActions [main] Waiting for installer sha file to be ready... LNE machine:10.85.25.79
+2020-09-24 19:07:32,592 INFO A.ManagerActions [main] End Point Agent Binary Version:	1.2.0.1295
+2020-09-24 19:07:32,593 INFO A.ManagerActions [main] Verifying linux installer...
+2020-09-24 19:07:32,594 DEBUG A.ManagerActions [main] Hash is: 1b3017a5a715c88321f66957884bfa87ea78b4c7effbdae38a5db8619ce59b38
+2020-09-24 19:07:32,793 INFO A.ManagerActions [main] Linux installer hash verified successfully.
+2020-09-24 19:07:32,952 INFO A.LNEActions [main] Success. LNE certificate received
+2020-09-24 19:07:32,983 INFO T.L.InstallEP [main] Starting InstallEndPoint test ...
+2020-09-24 19:07:34,126 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:07:34,127 INFO A.LinuxAgentActions [main] Uninstalling EP if exists...
+2020-09-24 19:07:34,146 INFO A.LinuxAgentActions [main] Endpoint not installed, no need to remove
+2020-09-24 19:07:34,147 INFO A.BaseAgentActions [main] Copying installer to the EP...
+2020-09-24 19:07:34,147 DEBUG A.BaseAgentActions [main] masterDownloadDirectory: C:/home/NepManagerDownloads
+2020-09-24 19:07:34,147 DEBUG A.BaseAgentActions [main] epDownloadDirectory: /home/NepEPDownloads
+2020-09-24 19:07:34,194 DEBUG A.BaseAgentActions [main] installerDestination: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:07:34,194 DEBUG A.BaseAgentActions [main] installerSource: C:/home/NepManagerDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:08:06,186 INFO A.LinuxAgentActions [main] Installing EP...
+2020-09-24 19:08:06,203 DEBUG A.LinuxAgentActions [main] installer location: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:08:06,267 INFO U.R.SSHManager [main] Execute chmod +x /home/NepEPDownloads/TrustwaveEndpoint.lnx done!
+2020-09-24 19:08:08,447 ERROR U.R.SSHManager [main] Error response: 
+Created symlink from /etc/systemd/system/multi-user.target.wants/tw-endpoint.service to /etc/systemd/system/tw-endpoint.service.
+2020-09-24 19:08:08,447 INFO U.R.SSHManager [main] Execute /home/NepEPDownloads/TrustwaveEndpoint.lnx done!
+2020-09-24 19:08:13,572 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:08:13,572 INFO A.LinuxAgentActions [main] Stopping Linux EP service...
+2020-09-24 19:08:33,640 INFO U.R.SSHManager [main] Execute systemctl stop tw-endpoint done!
+2020-09-24 19:08:38,690 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:08:38,690 INFO A.BaseAgentActions [main] Adding certificate on the EP...
+2020-09-24 19:08:39,756 INFO A.LinuxAgentActions [main] Starting EP service...
+2020-09-24 19:08:39,810 INFO U.R.SSHManager [main] Execute systemctl start tw-endpoint done!
+2020-09-24 19:08:44,870 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:08:46,920 INFO U.R.SSHManager [main] Execute hostname done!
+2020-09-24 19:08:47,053 INFO U.R.SSHManager [main] Execute tac /work/services/stub-srv/var/log/nep/nep_dummy_services.log | grep -m 1 "Method 'registerEndpoint'" done!
+2020-09-24 19:08:47,056 INFO A.LNEActions [main] Found centcom call for method 'registerEndpoint' in the dummy services log!
+2020-09-24 19:08:47,061 INFO T.L.StandaloneEPconfigurationVerify [main] Starting StandaloneEPconfigurationVerify::verifyStandaloneEPconfiguration ...
+2020-09-24 19:08:47,075 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 19:08:47,076 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.4 hostname ep1 os Windows 10 macAddress 84-7B-EB-21-22
+2020-09-24 19:08:48,339 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID 888799f8-fb0b-4e66-90cf-8e5b5320e8da
+2020-09-24 19:08:48,339 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 19:08:48,344 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.5 hostname ep2 os Windows 10 macAddress 84-7B-EB-21-23
+2020-09-24 19:08:48,497 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID e33be023-f6ab-47a9-9104-2e522801f37f
+2020-09-24 19:08:49,447 INFO A.LNEActions [main] SetCustomerConfiguration response: 200
+2020-09-24 19:08:50,108 INFO A.LNEActions [main] setEndpointConfig response: 200
+2020-09-24 19:08:50,110 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 888799f8-fb0b-4e66-90cf-8e5b5320e8da epName ep1 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:50,110 INFO A.SimulatedAgentActions [main] Will send request check-updates/888799f8-fb0b-4e66-90cf-8e5b5320e8da/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep1/schema-ver/1.1.1/
+2020-09-24 19:08:50,236 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@601d6622'
+2020-09-24 19:08:50,237 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId 888799f8-fb0b-4e66-90cf-8e5b5320e8da
+2020-09-24 19:08:50,323 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":2,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:50,335 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid e33be023-f6ab-47a9-9104-2e522801f37f epName ep2 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:50,336 INFO A.SimulatedAgentActions [main] Will send request check-updates/e33be023-f6ab-47a9-9104-2e522801f37f/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep2/schema-ver/1.1.1/
+2020-09-24 19:08:50,418 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@515ab3f2'
+2020-09-24 19:08:50,421 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId e33be023-f6ab-47a9-9104-2e522801f37f
+2020-09-24 19:08:50,492 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":3,"schema_version":"1.1.1"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:51,061 INFO A.LNEActions [main] Success. LNE revokeEpConfiguration response: 200
+2020-09-24 19:08:51,062 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid e33be023-f6ab-47a9-9104-2e522801f37f epName ep2 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:51,062 INFO A.SimulatedAgentActions [main] Will send request check-updates/e33be023-f6ab-47a9-9104-2e522801f37f/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep2/schema-ver/1.1.1/
+2020-09-24 19:08:51,143 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@5cfed0ba'
+2020-09-24 19:08:51,144 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId e33be023-f6ab-47a9-9104-2e522801f37f
+2020-09-24 19:08:51,217 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":2,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:51,823 INFO A.LNEActions [main] SetCustomerConfiguration response: 200
+2020-09-24 19:08:51,824 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 888799f8-fb0b-4e66-90cf-8e5b5320e8da epName ep1 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:51,824 INFO A.SimulatedAgentActions [main] Will send request check-updates/888799f8-fb0b-4e66-90cf-8e5b5320e8da/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep1/schema-ver/1.1.1/
+2020-09-24 19:08:51,923 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@6380e9e9'
+2020-09-24 19:08:51,933 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId 888799f8-fb0b-4e66-90cf-8e5b5320e8da
+2020-09-24 19:08:52,047 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":3,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:52,049 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid e33be023-f6ab-47a9-9104-2e522801f37f epName ep2 binVersion 1.1.1 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:52,049 INFO A.SimulatedAgentActions [main] Will send request check-updates/e33be023-f6ab-47a9-9104-2e522801f37f/bin-ver/1.1.1/conf-ver/0/reporting-status/0/local-name/ep2/schema-ver/1.1.1/
+2020-09-24 19:08:52,139 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@4f235107'
+2020-09-24 19:08:52,140 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId e33be023-f6ab-47a9-9104-2e522801f37f
+2020-09-24 19:08:52,211 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":3,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:52,212 INFO T.L.StandaloneEPconfigurationVerify [main] StandaloneEPconfigurationVerify::verifyStandaloneEPconfiguration completed.
+2020-09-24 19:08:52,213 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: ep1
+2020-09-24 19:08:52,788 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 888799f8-fb0b-4e66-90cf-8e5b5320e8da epName ep1 binVersion 1.2.0.100 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:52,789 INFO A.SimulatedAgentActions [main] Will send request check-updates/888799f8-fb0b-4e66-90cf-8e5b5320e8da/bin-ver/1.2.0.100/conf-ver/0/reporting-status/0/local-name/ep1/schema-ver/1.1.1/
+2020-09-24 19:08:52,880 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@6c835217'
+2020-09-24 19:08:52,881 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: ep2
+2020-09-24 19:08:53,426 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid e33be023-f6ab-47a9-9104-2e522801f37f epName ep2 binVersion 1.2.0.100 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:53,426 INFO A.SimulatedAgentActions [main] Will send request check-updates/e33be023-f6ab-47a9-9104-2e522801f37f/bin-ver/1.2.0.100/conf-ver/0/reporting-status/0/local-name/ep2/schema-ver/1.1.1/
+2020-09-24 19:08:53,508 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@5fb3111a'
+2020-09-24 19:08:53,511 INFO T.L.ChangeCustomerConfAndVerify [main] Starting ChangeCustomerConfAndVerify...
+2020-09-24 19:08:54,075 INFO A.LNEActions [main] SetCustomerConfiguration response: 200
+2020-09-24 19:08:54,076 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 19:08:54,076 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.4 hostname epForTest os Windows 10 macAddress 84-7B-EB-21
+2020-09-24 19:08:54,198 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID 44182525-e0ff-4266-a73d-025209fb9da8
+2020-09-24 19:08:54,199 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 44182525-e0ff-4266-a73d-025209fb9da8 epName epForTest binVersion 1.2.0.100 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:54,199 INFO A.SimulatedAgentActions [main] Will send request check-updates/44182525-e0ff-4266-a73d-025209fb9da8/bin-ver/1.2.0.100/conf-ver/0/reporting-status/0/local-name/epForTest/schema-ver/1.1.1/
+2020-09-24 19:08:54,288 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@1785d194'
+2020-09-24 19:08:54,293 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId 44182525-e0ff-4266-a73d-025209fb9da8
+2020-09-24 19:08:54,362 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":4,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:54,369 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: epForTest
+2020-09-24 19:08:54,928 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 44182525-e0ff-4266-a73d-025209fb9da8 epName epForTest binVersion 1.2.0.100 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:54,929 INFO A.SimulatedAgentActions [main] Will send request check-updates/44182525-e0ff-4266-a73d-025209fb9da8/bin-ver/1.2.0.100/conf-ver/0/reporting-status/0/local-name/epForTest/schema-ver/1.1.1/
+2020-09-24 19:08:55,010 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@5939e24'
+2020-09-24 19:08:55,011 INFO T.L.ClusterConfiguration [main] Starting setClusterConfiguration test ...
+2020-09-24 19:08:56,086 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:08:56,087 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 19:08:56,087 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.4 hostname CraftyEp os Windows 10 macAddress 84-7B-EB-21-99-99
+2020-09-24 19:08:56,323 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID b6f680d3-34f6-4914-8d94-ea724fa4c866
+2020-09-24 19:08:56,323 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 19:08:56,324 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.5 hostname KoteEp os Windows 10 macAddress 85-7B-EB-21-99-99
+2020-09-24 19:08:56,421 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID a4ecc9f3-cd65-451a-b25b-8dce0a497576
+2020-09-24 19:08:57,052 INFO A.LNEActions [main] setClusterConfig response: 200
+2020-09-24 19:08:57,724 INFO A.LNEActions [main] Success. LNE updateClusterMap response: 200
+2020-09-24 19:08:58,414 INFO A.LNEActions [main] setClusterConfig response: 200
+2020-09-24 19:08:58,414 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid b6f680d3-34f6-4914-8d94-ea724fa4c866 epName CraftyEp binVersion 9.9.9.999 confVersion 1 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:58,415 INFO A.SimulatedAgentActions [main] Will send request check-updates/b6f680d3-34f6-4914-8d94-ea724fa4c866/bin-ver/9.9.9.999/conf-ver/1/reporting-status/0/local-name/CraftyEp/schema-ver/1.1.1/
+2020-09-24 19:08:58,494 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@451e2fa9'
+2020-09-24 19:08:58,495 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid a4ecc9f3-cd65-451a-b25b-8dce0a497576 epName KoteEp binVersion 9.9.9.999 confVersion 1 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:58,495 INFO A.SimulatedAgentActions [main] Will send request check-updates/a4ecc9f3-cd65-451a-b25b-8dce0a497576/bin-ver/9.9.9.999/conf-ver/1/reporting-status/0/local-name/KoteEp/schema-ver/1.1.1/
+2020-09-24 19:08:58,586 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@7b6141f0'
+2020-09-24 19:08:58,587 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId b6f680d3-34f6-4914-8d94-ea724fa4c866
+2020-09-24 19:08:58,658 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":6,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":666,"report_period":666,"ds_max_off_period":48,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:58,660 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId a4ecc9f3-cd65-451a-b25b-8dce0a497576
+2020-09-24 19:08:58,737 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":4,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:58,738 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId a4ecc9f3-cd65-451a-b25b-8dce0a497576
+2020-09-24 19:08:58,796 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":4,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:59,508 INFO A.LNEActions [main] Success. LNE updateClusterMap response: 200
+2020-09-24 19:08:59,509 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid b6f680d3-34f6-4914-8d94-ea724fa4c866 epName CraftyEp binVersion 9.9.9.999 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:08:59,510 INFO A.SimulatedAgentActions [main] Will send request check-updates/b6f680d3-34f6-4914-8d94-ea724fa4c866/bin-ver/9.9.9.999/conf-ver/0/reporting-status/0/local-name/CraftyEp/schema-ver/1.1.1/
+2020-09-24 19:08:59,590 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@60591e1b'
+2020-09-24 19:08:59,592 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:getConf. Params: epId b6f680d3-34f6-4914-8d94-ea724fa4c866
+2020-09-24 19:08:59,664 INFO A.SimulatedAgentActions [main] get conf succeeded, got conf: '{"global_conf":{"log_level":"debug","conf_version":4,"schema_version":"1.1.1","customer_id":"1001"},"agent":{"ds_host":"endpoint-protection-services.local.tw-test.net","ds_port":443,"ds_protocol":"https","check_update_period":30,"report_period":34,"ds_max_off_period":24,"modules":[{"name":"Windows Log Monitor","binary_name":"WLM.dll","enabled":true},{"name":"Log File Monitor","binary_name":"LFM.dll","enabled":true},{"name":"Linux Log Monitor","enabled":false}],"transport":{"server_type":2,"syslog":{"port":0},"scp":{"host":"siem-ingress.trustwave.com","dest_folder":"/var/siem/data/nep","port":9022,"user":"twsiem","ack":false,"max_send_folder_size":2}}},"wlm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[{"log_name":"security","enabled":true,"advanced_filter":false,"filters":[]},{"log_name":"application","enabled":false,"advanced_filter":false,"filters":[]}]},"lfm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"monitor_items":[]},"llm":{"max_monitor_queue_size":10000,"queues_collector_idle_time":5,"transport_type":2,"monitor_items":[]}}'
+2020-09-24 19:08:59,665 INFO T.L.RevokeEndpoint [main] Starting RevokeEndpoint test ...
+2020-09-24 19:09:00,720 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:09:01,717 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:09:01,718 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 19:09:01,718 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.4 hostname SimulatedAgentForRevokeTest os Windows 10 macAddress 84-7B-EB-21-99-99
+2020-09-24 19:09:02,371 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID 1b0aa8ec-1484-4d92-a4d2-8afd2874cbaa
+2020-09-24 19:09:02,496 INFO U.R.SSHManager [main] Execute hostname done!
+2020-09-24 19:09:03,057 INFO A.LNEActions [main] Success. LNE revoke response: 200
+2020-09-24 19:09:08,108 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:09:13,168 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:09:18,262 ERROR U.R.SSHManager [main] Error response: 
+Unit tw-endpoint.service could not be found.
+2020-09-24 19:09:18,263 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:09:18,264 INFO A.BaseAgentActions [main] Endpoint service was stopped!
+2020-09-24 19:09:18,264 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 1b0aa8ec-1484-4d92-a4d2-8afd2874cbaa epName SimulatedAgentForRevokeTest binVersion 1.1.1 confVersion 3 reporting status 0 schema version 1.1.2 
+2020-09-24 19:09:18,264 INFO A.SimulatedAgentActions [main] Will send request check-updates/1b0aa8ec-1484-4d92-a4d2-8afd2874cbaa/bin-ver/1.1.1/conf-ver/3/reporting-status/0/local-name/SimulatedAgentForRevokeTest/schema-ver/1.1.2/
+2020-09-24 19:09:18,690 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@6fbf5db2'
+2020-09-24 19:09:18,690 INFO A.LinuxAgentActions [main] Uninstalling EP if exists...
+2020-09-24 19:09:18,708 INFO A.LinuxAgentActions [main] Endpoint not installed, no need to remove
+2020-09-24 19:09:18,709 INFO A.BaseAgentActions [main] Copying installer to the EP...
+2020-09-24 19:09:18,709 DEBUG A.BaseAgentActions [main] masterDownloadDirectory: C:/home/NepManagerDownloads
+2020-09-24 19:09:18,710 DEBUG A.BaseAgentActions [main] epDownloadDirectory: /home/NepEPDownloads
+2020-09-24 19:09:18,739 DEBUG A.BaseAgentActions [main] installerDestination: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:09:18,739 DEBUG A.BaseAgentActions [main] installerSource: C:/home/NepManagerDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:09:49,921 INFO A.LinuxAgentActions [main] Installing EP...
+2020-09-24 19:09:49,960 DEBUG A.LinuxAgentActions [main] installer location: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:09:50,057 INFO U.R.SSHManager [main] Execute chmod +x /home/NepEPDownloads/TrustwaveEndpoint.lnx done!
+2020-09-24 19:09:50,961 ERROR U.R.SSHManager [main] Error response: 
+Created symlink from /etc/systemd/system/multi-user.target.wants/tw-endpoint.service to /etc/systemd/system/tw-endpoint.service.
+2020-09-24 19:09:50,962 INFO U.R.SSHManager [main] Execute /home/NepEPDownloads/TrustwaveEndpoint.lnx done!
+2020-09-24 19:09:56,019 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:09:56,019 INFO A.LinuxAgentActions [main] Stopping Linux EP service...
+2020-09-24 19:10:16,088 INFO U.R.SSHManager [main] Execute systemctl stop tw-endpoint done!
+2020-09-24 19:10:21,332 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:10:21,332 INFO A.BaseAgentActions [main] Adding certificate on the EP...
+2020-09-24 19:10:22,057 INFO A.LinuxAgentActions [main] Starting EP service...
+2020-09-24 19:10:22,107 INFO U.R.SSHManager [main] Execute systemctl start tw-endpoint done!
+2020-09-24 19:10:27,158 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:10:27,158 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: SimulatedAgentForRevokeTest
+2020-09-24 19:10:28,048 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid 1b0aa8ec-1484-4d92-a4d2-8afd2874cbaa epName SimulatedAgentForRevokeTest binVersion 1.1.1 confVersion 3 reporting status 0 schema version 1.1.2 
+2020-09-24 19:10:28,048 INFO A.SimulatedAgentActions [main] Will send request check-updates/1b0aa8ec-1484-4d92-a4d2-8afd2874cbaa/bin-ver/1.1.1/conf-ver/3/reporting-status/0/local-name/SimulatedAgentForRevokeTest/schema-ver/1.1.2/
+2020-09-24 19:10:28,118 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@11810917'
+2020-09-24 19:10:28,118 INFO T.L.RevokeEndpoint [main] RevokeEndpoint test completed.
+2020-09-24 19:10:28,121 INFO T.L.DeleteEndpoint [main] Starting DeleteEndpoint test ...
+2020-09-24 19:10:29,188 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:10:30,184 INFO U.R.SSHManager [main] Connected Successfully to host 10.85.25.79
+2020-09-24 19:10:30,184 INFO A.SimulatedAgentActions [main] SimulatedAgentActions: http://10.85.25.79:53850/
+2020-09-24 19:10:30,184 INFO A.SimulatedAgentActions [main] Starting SimulatedAgentActions:register. Params: customer 1001 ip 1.2.3.4 hostname SimulatedAgentForDeleteTest os Windows 10 macAddress 84-7B-EB-21-99-99
+2020-09-24 19:10:30,299 INFO A.SimulatedAgentActions [main] Register succeeded, got UUID f9b252c0-aa78-4b49-9e73-d9a2b48da90e
+2020-09-24 19:10:30,546 INFO U.R.SSHManager [main] Execute hostname done!
+2020-09-24 19:10:31,414 INFO A.LNEActions [main] Success. LNE delete response: 200
+2020-09-24 19:10:36,638 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:10:41,692 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:10:46,758 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:10:51,810 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:10:56,860 ERROR U.R.SSHManager [main] Error response: 
+Unit tw-endpoint.service could not be found.
+2020-09-24 19:10:56,860 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:10:56,860 INFO A.BaseAgentActions [main] Endpoint service was stopped!
+2020-09-24 19:10:56,860 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid f9b252c0-aa78-4b49-9e73-d9a2b48da90e epName SimulatedAgentForDeleteTest binVersion 1.1.1 confVersion 3 reporting status 0 schema version 1.1.2 
+2020-09-24 19:10:56,861 INFO A.SimulatedAgentActions [main] Will send request check-updates/f9b252c0-aa78-4b49-9e73-d9a2b48da90e/bin-ver/1.1.1/conf-ver/3/reporting-status/0/local-name/SimulatedAgentForDeleteTest/schema-ver/1.1.2/
+2020-09-24 19:10:57,280 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@ca7e37f'
+2020-09-24 19:10:57,280 INFO A.LinuxAgentActions [main] Uninstalling EP if exists...
+2020-09-24 19:10:57,297 INFO A.LinuxAgentActions [main] Endpoint not installed, no need to remove
+2020-09-24 19:10:57,298 INFO A.BaseAgentActions [main] Copying installer to the EP...
+2020-09-24 19:10:57,298 DEBUG A.BaseAgentActions [main] masterDownloadDirectory: C:/home/NepManagerDownloads
+2020-09-24 19:10:57,298 DEBUG A.BaseAgentActions [main] epDownloadDirectory: /home/NepEPDownloads
+2020-09-24 19:10:57,319 DEBUG A.BaseAgentActions [main] installerDestination: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:10:57,319 DEBUG A.BaseAgentActions [main] installerSource: C:/home/NepManagerDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:11:40,703 INFO A.LinuxAgentActions [main] Installing EP...
+2020-09-24 19:11:40,745 DEBUG A.LinuxAgentActions [main] installer location: /home/NepEPDownloads/TrustwaveEndpoint.lnx
+2020-09-24 19:11:40,805 INFO U.R.SSHManager [main] Execute chmod +x /home/NepEPDownloads/TrustwaveEndpoint.lnx done!
+2020-09-24 19:11:45,349 ERROR U.R.SSHManager [main] Error response: 
+Created symlink from /etc/systemd/system/multi-user.target.wants/tw-endpoint.service to /etc/systemd/system/tw-endpoint.service.
+2020-09-24 19:11:45,349 INFO U.R.SSHManager [main] Execute /home/NepEPDownloads/TrustwaveEndpoint.lnx done!
+2020-09-24 19:11:50,463 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:11:50,463 INFO A.LinuxAgentActions [main] Stopping Linux EP service...
+2020-09-24 19:12:10,535 INFO U.R.SSHManager [main] Execute systemctl stop tw-endpoint done!
+2020-09-24 19:12:15,596 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:12:15,596 INFO A.BaseAgentActions [main] Adding certificate on the EP...
+2020-09-24 19:12:18,703 INFO A.LinuxAgentActions [main] Starting EP service...
+2020-09-24 19:12:18,760 INFO U.R.SSHManager [main] Execute systemctl start tw-endpoint done!
+2020-09-24 19:12:23,809 INFO U.R.SSHManager [main] Execute systemctl status tw-endpoint done!
+2020-09-24 19:12:24,081 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: SimulatedAgentForDeleteTest
+2020-09-24 19:12:24,865 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid f9b252c0-aa78-4b49-9e73-d9a2b48da90e epName SimulatedAgentForDeleteTest binVersion 1.1.1 confVersion 3 reporting status 0 schema version 1.1.2 
+2020-09-24 19:12:24,865 INFO A.SimulatedAgentActions [main] Will send request check-updates/f9b252c0-aa78-4b49-9e73-d9a2b48da90e/bin-ver/1.1.1/conf-ver/3/reporting-status/0/local-name/SimulatedAgentForDeleteTest/schema-ver/1.1.2/
+2020-09-24 19:12:24,964 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@3a6e9856'
+2020-09-24 19:12:24,965 INFO T.L.DeleteEndpoint [main] DeleteEndpoint test completed.
+2020-09-24 19:12:25,522 INFO A.LNEActions [main] Success. LNE updateClusterMap response: 200
+2020-09-24 19:12:25,522 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: CraftyEp
+2020-09-24 19:12:26,065 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid b6f680d3-34f6-4914-8d94-ea724fa4c866 epName CraftyEp binVersion 1.2.0.100 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:12:26,065 INFO A.SimulatedAgentActions [main] Will send request check-updates/b6f680d3-34f6-4914-8d94-ea724fa4c866/bin-ver/1.2.0.100/conf-ver/0/reporting-status/0/local-name/CraftyEp/schema-ver/1.1.1/
+2020-09-24 19:12:26,147 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@2fde9469'
+2020-09-24 19:12:26,148 INFO A.LNEActions [main] Going to send delete endpoint request to Centcom client, customer: 1001, ep: KoteEp
+2020-09-24 19:12:26,671 INFO A.SimulatedAgentActions [main] Starting checkUpdates. Params: uuid a4ecc9f3-cd65-451a-b25b-8dce0a497576 epName KoteEp binVersion 1.2.0.100 confVersion 0 reporting status 0 schema version 1.1.1 
+2020-09-24 19:12:26,682 INFO A.SimulatedAgentActions [main] Will send request check-updates/a4ecc9f3-cd65-451a-b25b-8dce0a497576/bin-ver/1.2.0.100/conf-ver/0/reporting-status/0/local-name/KoteEp/schema-ver/1.1.1/
+2020-09-24 19:12:26,768 INFO A.SimulatedAgentActions [main] Check updates succeeded, got response: 'io.restassured.internal.RestAssuredResponseImpl@463045fb'
+2020-09-24 19:12:26,769 INFO T.L.ClusterConfiguration [main] Closing...

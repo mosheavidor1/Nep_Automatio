@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Download and install</th></tr>
+<tr><td><a href="#t0">Download installer, install End Point and verify logs are sent</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">149,891</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Download and install</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Download installer, install End Point and verify logs are sent &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.Environments.DownloadFromPortalTest</td><td><a href="#m0">DownloadTest</a></td><td rowspan="1">1603123656465</td><td rowspan="1">145047</td></tr><tr><th colspan="4">Download installer, install End Point and verify logs are sent &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Tests.Environments.ClientLogToPortalTest</td><td><a href="#m1">SendLogsAndVerify</a></td><td rowspan="1">1603123806204</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">Tests.Environments.InstallEndPointEnvironmentsTest</td><td><a href="#m2">InstallTest</a></td><td rowspan="1">1603123806203</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">Tests.Environments.VerifyEndPointOkAtPortalTest</td><td><a href="#m3">VerifyEndPointStatusAtPortalTest</a></td><td rowspan="1">1603123806204</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Download installer, install End Point and verify logs are sent</h2><h3 id="m0">Tests.Environments.DownloadFromPortalTest#DownloadTest</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{EP_Type_1=win, Customer=TrustwaveEPstg Test #1, Wait because File is still being processed (virus scanned and stored)=300, Wait files to be downloaded timeout in seconds=600, EP_UserName_1=solo-user, EP_Password_1=breach12345, Wait for publish to be completed=180, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.175, Wait files ready to download timeout=240}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Could not download endpoint installation files
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NTY-EN-8D25HC2&apos;, ip: &apos;10.243.68.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56704}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4f08e7ff591f41dc4aac704b2aea86cc
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;TrustwaveEndpoint.exe&apos;)]}
+
+Video: C:\Nep-2-next\nep-qa-master@b67ce9e09f9\nep-qa-automation\test-output\Capture\DownloadFromPortalTest 19-10-2020 19.07.36.avi
+
+
+	at Actions.BrowserActions.DownloadFilesFromTrustWaveEndPointFolder(BrowserActions.java:500)
+	at Tests.Environments.DownloadFromPortalTest.DownloadTest(DownloadFromPortalTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:87)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.Environments.ClientLogToPortalTest#SendLogsAndVerify</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Event Description=Hello!! this is the test info, Customer=TrustwaveEPstg Test #1, Log To Appear Timeout=600, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=solo-user, EP_Password_1=breach12345, Parameters Per Environment=STG, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.stg.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.175}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method ClientLogToPortalTest.SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@2a40cd94, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEPstg Test #1, Log To Appear Timeout=600, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=solo-user, EP_Password_1=breach12345, Parameters Per Environment=STG, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.stg.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.175}]] depends on not successfully finished methods in group &quot;verify&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:87)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.Environments.InstallEndPointEnvironmentsTest#InstallTest</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=solo-user, EP_Password_1=breach12345, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.175}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method InstallEndPointEnvironmentsTest.InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@2df32bf7, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=solo-user, EP_Password_1=breach12345, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.175}]] depends on not successfully finished methods in group &quot;download&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:87)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.Environments.VerifyEndPointOkAtPortalTest#VerifyEndPointStatusAtPortalTest</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Customer=TrustwaveEPstg Test #1}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method VerifyEndPointOkAtPortalTest.VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@530612ba, instance params:[{Customer=TrustwaveEPstg Test #1}]] depends on not successfully finished methods in group &quot;install&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:87)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
